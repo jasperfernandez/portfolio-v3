@@ -1,12 +1,14 @@
 import AppHeader from './components/AppHeader';
+import AppFooter from './components/AppFooter';
 import AppRoutes from './constants/app-routes';
 
 const App = () => {
   return (
-    <div>
+    <>
       <AppHeader />
       <AppRoutes />
-    </div>
+      <AppFooter />
+    </>
   );
 };
 

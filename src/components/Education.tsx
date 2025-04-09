@@ -1,4 +1,4 @@
-import { BriefcaseBusiness } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
 import {
   Timeline,
@@ -10,20 +10,20 @@ import {
   TimelineSeparator,
   TimelineTitle,
 } from './ui/timeline';
-import { myExperience } from '@/constants/info';
+import { educations } from '@/constants/info';
 
-const Experience = () => {
+const Education = () => {
   return (
     <Card className='shadow-none py-4 rounded-md gap-4'>
       <CardHeader className='px-4 flex items-center'>
         <CardTitle className='text-sm flex items-center gap-1.5'>
-          <BriefcaseBusiness size={20} strokeWidth={1.5} />
-          <span className='font-bold'>My Experience</span>
+          <GraduationCap size={20} strokeWidth={1.5} />
+          <span className='font-bold'>Education</span>
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <Timeline defaultValue={1}>
-          {myExperience.map((item) => (
+        <Timeline>
+          {educations.map((item) => (
             <TimelineItem key={item.id} step={item.id}>
               <TimelineHeader>
                 <TimelineSeparator />
@@ -40,4 +40,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;
