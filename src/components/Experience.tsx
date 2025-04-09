@@ -18,7 +18,7 @@ const Experience = () => {
       <CardHeader className='px-4 flex items-center'>
         <CardTitle className='text-sm flex items-center gap-1.5'>
           <BriefcaseBusiness size={20} strokeWidth={1.5} />
-          <span className='font-bold'>My Experience</span>
+          <span className='font-bold'>Experience</span>
         </CardTitle>
       </CardHeader>
       <CardContent>

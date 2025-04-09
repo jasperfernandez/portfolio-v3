@@ -1,63 +1,56 @@
-const ProjectCard = () => {
+import { Project } from '@/types';
+import IconLink from './IconLink';
+import { GitBranch, SquareArrowOutUpRight } from 'lucide-react';
+import SkillBox from './SkillBox';
+import { skills } from '@/constants/info';
+
+interface ProjectCardProps {
+  project: Project;
+  className?: string;
+}
+
+const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
   return (
-    <div className='border border-border rounded-md p-4'>
-      <h1 className='font-medium'>E-VotePro</h1>
+    <div className={`border border-border rounded-md p-4 w-full ${className}`}>
+      <h1 className='font-semibold'>{project.title}</h1>
 
-      <p className='text-sm text-muted-foreground'>A voting system.</p>
+      <p className='text-sm text-muted-foreground mb-4'>
+        {project.description}
+      </p>
 
-      {/* 
-          <div>
-            <IconLink
-              href=''
-              icon={<SquareArrowOutUpRight size={16} strokeWidth={1.5} />}
-            />
-          </div>
+      <div className='flex gap-2 items-center'>
+        <IconLink
+          href={project.repoLink}
+          icon={<GitBranch size={16} strokeWidth={1.5} />}
+        />
+        <IconLink
+          href={project.link}
+          icon={<SquareArrowOutUpRight size={16} strokeWidth={1.5} />}
+        />
+      </div>
 
-          <div className='flex gap-2 items-center'>
+      <div className='flex flex-wrap gap-2 mt-2'>
+        {project.stack.map((tech) => {
+          const skill = skills[tech as keyof typeof skills];
+
+          if (!skill) return null;
+
+          return (
             <SkillBox
-              title={skills.javascript.title}
+              key={tech}
+              title={skill.title}
               logo={
                 <img
-                  src={`/logos/${skills.javascript.key}.svg`}
+                  src={`/logos/${skill.key}.svg`}
+                  alt={skill.title}
                   className='size-4'
                 />
               }
-              className='w-fit'
+              className='mt-2'
             />
-
-            <SkillBox
-              title={skills.laravel.title}
-              logo={
-                <img
-                  src={`/logos/${skills.laravel.key}.svg`}
-                  className='size-4'
-                />
-              }
-              className='w-fit'
-            />
-
-            <SkillBox
-              title={skills.bootstrap.title}
-              logo={
-                <img
-                  src={`/logos/${skills.bootstrap.key}.svg`}
-                  className='size-4'
-                />
-              }
-              className='w-fit'
-            />
-
-            <SkillBox
-              title={skills.mysql.title}
-              logo={
-                <img
-                  src={`/logos/${skills.mysql.key}.svg`}
-                  className='size-4'
-                />
-              }
-              className='w-fit'
-            />
-          </div> */}
+          );
+        })}
+      </div>
     </div>
   );
 };

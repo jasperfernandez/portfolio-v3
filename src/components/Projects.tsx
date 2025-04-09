@@ -22,20 +22,21 @@ const Projects = () => {
             description={projects.evotepro.description}
             link={projects.evotepro.link}
           />
-          <ProjectSimpleCard
-            title={projects.nembus.title}
-            description={projects.nembus.description}
-            link={projects.nembus.link}
-          />
+
           <ProjectSimpleCard
             title={projects.bms.title}
             description={projects.bms.description}
             link={projects.bms.link}
           />
           <ProjectSimpleCard
-            title={projects.rcs.title}
-            description={projects.rcs.description}
-            link={projects.rcs.link}
+            title={projects.pms.title}
+            description={projects.pms.description}
+            link={projects.pms.link}
+          />
+          <ProjectSimpleCard
+            title={projects.syllabot.title}
+            description={projects.syllabot.description}
+            link={projects.syllabot.link}
           />
 
           <NavLink to={APP_PATHS.projects}>

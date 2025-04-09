@@ -1,3 +1,5 @@
+import { Project } from '@/types';
+
 export const personalInfo = {
   name: 'Jasper Fernandez',
   address: 'Tandag City, Surigao del Sur, Philippines',
@@ -61,22 +63,16 @@ export const links = {
   linkedin: 'https://www.linkedin.com/in/fernandezjasper',
 };
 
-export const projects = {
+export const projects: Record<string, Project> = {
   evotepro: {
     key: 'evotepro',
     title: 'E-VotePro',
     description:
       "An election management system tailored for NEMSU's student elections.",
     link: '',
-    stack: [
-      'html',
-      'css',
-      'javascript',
-      'php',
-      'laravel',
-      'bootstrap',
-      'mysql',
-    ],
+    repoLink: '',
+    images: [],
+    stack: ['laravel', 'bootstrap', 'mysql'],
   },
   aptiquest: {
     key: 'aptiquest',
@@ -84,15 +80,9 @@ export const projects = {
     description:
       "A management system for student applicants and examiner's exam results for NEMSU Tandag Campus Guidance Office.",
     link: '',
-    stack: [
-      'html',
-      'css',
-      'javascript',
-      'php',
-      'laravel',
-      'bootstrap',
-      'mysql',
-    ],
+    repoLink: '',
+    images: [],
+    stack: ['laravel', 'bootstrap', 'mysql'],
   },
   inventra: {
     key: 'inventra',
@@ -100,6 +90,8 @@ export const projects = {
     description:
       'An inventory management system custom built for Jelmaxx Hardware.',
     link: '',
+    repoLink: '',
+    images: [],
     stack: [
       'html',
       'css',
@@ -116,14 +108,18 @@ export const projects = {
     description:
       'An barangay management system custom built for Barangay Bag-ong Lunsod.',
     link: 'https://brgybagonglungsod.site/',
+    repoLink: '',
+    images: [],
     stack: ['react', 'inertiajs', 'laravel', 'tailwindcss', 'mysql'],
   },
-  rcs: {
-    key: 'rcs',
-    title: 'RCS',
+  pms: {
+    key: 'pms',
+    title: 'PMS',
     description:
-      'A rabies control system for managing pet records utilizing Random Forest Algorithm for barangay risk level analysis built for Tandag City Vet Office.',
+      'A pet management system utilizing Random Forest Algorithm for barangay risk level analysis built for Tandag City Vet Office and Barangay Councils.',
     link: 'https://rabies-control-system.online',
+    repoLink: '',
+    images: [],
     stack: [
       'react',
       'inertiajs',
@@ -133,12 +129,14 @@ export const projects = {
       'mysql',
     ],
   },
-  nembus: {
-    key: 'nembus',
-    title: 'NEMBUS',
+  syllabot: {
+    key: 'syllabot',
+    title: 'SyllaBot',
     description:
-      'A chatbot for syllabi queries using GPT 3.5 Turbo and LlamaParse of LlamaIndex.',
+      'A chatbot for syllabi queries using GPT 3.5 Turbo and LlamaParse.',
     link: 'https://nembus.site',
+    repoLink: '',
+    images: [],
     stack: [
       'react',
       'inertiajs',
@@ -148,12 +146,14 @@ export const projects = {
       'mysql',
     ],
   },
-  optplus: {
-    key: 'optplus',
-    title: 'OPT-PLUS',
+  cms: {
+    key: 'cms',
+    title: 'CMS',
     description:
       'A system for managing child health assesments with AI analysis using GPT 3.5 Turbo.',
     link: 'https://opt-plus.site',
+    repoLink: '',
+    images: [],
     stack: ['react', 'inertiajs', 'laravel', 'tailwindcss', 'mysql'],
   },
 };
