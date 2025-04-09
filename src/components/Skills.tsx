@@ -86,104 +86,99 @@ const Skills = () => {
 
           <TabsContent value='tab-1'>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'>
-              {skills.map((skill) => (
-                <SkillBox
-                  key={skill.key}
-                  title={skill.title}
-                  logo={
-                    <img
-                      src={`/logos/${skill.key}.svg`}
-                      alt={skill.title}
-                      className='size-4'
-                    />
-                  }
-                />
-              ))}
+              {Object.keys(skills).map((key) => {
+                const skill = skills[key as keyof typeof skills];
+                return (
+                  <SkillBox
+                    key={key}
+                    title={skill.title}
+                    logo={
+                      <img
+                        src={`/logos/${key}.svg`}
+                        alt={skill.title}
+                        className='size-4'
+                      />
+                    }
+                  />
+                );
+              })}
             </div>
           </TabsContent>
           <TabsContent value='tab-2'>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'>
-              {skills.map((skill) => {
-                if (skill.type === 'frontend') {
-                  return (
-                    <SkillBox
-                      key={skill.key}
-                      title={skill.title}
-                      logo={
-                        <img
-                          src={`/logos/${skill.key}.svg`}
-                          alt={skill.title}
-                          className='size-4'
-                        />
-                      }
-                    />
-                  );
-                }
-              })}
+              {(Object.keys(skills) as (keyof typeof skills)[])
+                .filter((key) => skills[key].type === 'frontend')
+                .map((key) => (
+                  <SkillBox
+                    key={key}
+                    title={skills[key].title}
+                    logo={
+                      <img
+                        src={`/logos/${key}.svg`}
+                        alt={skills[key].title}
+                        className='size-4'
+                      />
+                    }
+                  />
+                ))}
             </div>
           </TabsContent>
           <TabsContent value='tab-3'>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'>
-              {skills.map((skill) => {
-                if (skill.type === 'backend') {
-                  return (
-                    <SkillBox
-                      key={skill.key}
-                      title={skill.title}
-                      logo={
-                        <img
-                          src={`/logos/${skill.key}.svg`}
-                          alt={skill.title}
-                          className='size-4'
-                        />
-                      }
-                    />
-                  );
-                }
-              })}
+              {(Object.keys(skills) as (keyof typeof skills)[])
+                .filter((key) => skills[key].type === 'backend')
+                .map((key) => (
+                  <SkillBox
+                    key={key}
+                    title={skills[key].title}
+                    logo={
+                      <img
+                        src={`/logos/${key}.svg`}
+                        alt={skills[key].title}
+                        className='size-4'
+                      />
+                    }
+                  />
+                ))}
             </div>
           </TabsContent>
           <TabsContent value='tab-4'>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'>
-              {skills.map((skill) => {
-                if (skill.type === 'database') {
-                  return (
-                    <SkillBox
-                      key={skill.key}
-                      title={skill.title}
-                      logo={
-                        <img
-                          src={`/logos/${skill.key}.svg`}
-                          alt={skill.title}
-                          className='size-4'
-                        />
-                      }
-                    />
-                  );
-                }
-              })}
+              {(Object.keys(skills) as (keyof typeof skills)[])
+                .filter((key) => skills[key].type === 'database')
+                .map((key) => (
+                  <SkillBox
+                    key={key}
+                    title={skills[key].title}
+                    logo={
+                      <img
+                        src={`/logos/${key}.svg`}
+                        alt={skills[key].title}
+                        className='size-4'
+                      />
+                    }
+                  />
+                ))}
             </div>
           </TabsContent>
 
           <TabsContent value='tab-5'>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'>
-              {skills.map((skill) => {
-                if (skill.type === 'tools') {
-                  return (
-                    <SkillBox
-                      key={skill.key}
-                      title={skill.title}
-                      logo={
-                        <img
-                          src={`/logos/${skill.key}.svg`}
-                          alt={skill.title}
-                          className='size-4'
-                        />
-                      }
-                    />
-                  );
-                }
-              })}
+              {(Object.keys(skills) as (keyof typeof skills)[])
+                .filter((key) => skills[key].type === 'tools')
+                .map((key) => (
+                  <SkillBox
+                    key={key}
+                    title={skills[key].title}
+                    logo={
+                      <img
+                        src={`/logos/${key}.svg`}
+                        alt={skills[key].title}
+                        className='size-4'
+                      />
+                    }
+                  />
+                ))}
             </div>
           </TabsContent>
         </Tabs>

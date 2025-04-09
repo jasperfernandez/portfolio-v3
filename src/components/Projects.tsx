@@ -10,7 +10,22 @@ const Projects = () => {
           <span className='font-bold'>Projects</span>
         </CardTitle>
       </CardHeader>
-      <CardContent></CardContent>
+      <CardContent>
+        <div className='border border-border rounded-md p-4'>
+          <h1 className='font-medium'>E-VotePro</h1>
+
+          <p className='text-sm text-muted-foreground'>
+            A decentralized voting system built on the Ethereum blockchain,
+            ensuring transparency and security in the voting process.
+          </p>
+          <div>
+            {/* <SkillBox
+            title='Laravel'
+            logo={skills.laravel}
+             > */}
+          </div>
+        </div>
+      </CardContent>
     </Card>
   );
 };

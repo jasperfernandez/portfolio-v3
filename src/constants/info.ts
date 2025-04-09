@@ -61,130 +61,128 @@ export const links = {
   linkedin: 'https://www.linkedin.com/in/fernandezjasper',
 };
 
-export const skills = [
+export const skills = {
   // Frontend
-  {
-    key: 'html',
+  html: {
     title: 'HTML',
     type: 'frontend',
   },
-  {
-    key: 'css',
+  css: {
     title: 'CSS',
     type: 'frontend',
   },
-  {
-    key: 'javascript',
+  javascript: {
     title: 'JavaScript',
     type: 'frontend',
   },
-  {
-    key: 'typescript',
+  typescript: {
     title: 'TypeScript',
     type: 'frontend',
   },
-  {
-    key: 'react',
+  react: {
     title: 'React',
     type: 'frontend',
   },
-
-  {
-    key: 'tailwindcss',
+  tailwindcss: {
     title: 'Tailwind CSS',
     type: 'frontend',
   },
-  {
-    key: 'bootstrap',
+  bootstrap: {
     title: 'Bootstrap',
     type: 'frontend',
   },
-  {
-    key: 'shadcnui',
+  shadcnui: {
     title: 'Shadcn UI',
     type: 'frontend',
   },
 
   // Backend
-  {
-    key: 'php',
+  php: {
     title: 'PHP',
     type: 'backend',
   },
-  {
-    key: 'laravel',
+  laravel: {
     title: 'Laravel',
     type: 'backend',
   },
 
   // Database
-  {
-    key: 'sqlite',
+  mysql: {
+    title: 'MySQL',
+    type: 'database',
+  },
+  sqlite: {
     title: 'SQLite',
     type: 'database',
   },
-  {
-    key: 'mysql',
-    title: 'MySQL',
+  postgressql: {
+    title: 'PostgresSQL',
     type: 'database',
   },
 
   // Tools
-  {
-    key: 'postman',
+  postman: {
     title: 'Postman',
     type: 'tools',
   },
-  {
-    key: 'git',
+  git: {
     title: 'Git',
     type: 'tools',
   },
-  {
-    key: 'github',
+  github: {
     title: 'Github',
     type: 'tools',
   },
-  {
-    key: 'githubdesktop',
+  githubdesktop: {
     title: 'Github Desktop',
     type: 'tools',
   },
-  {
-    key: 'vscode',
+  vscode: {
     title: 'VS Code',
     type: 'tools',
   },
-  {
-    key: 'phpstorm',
+  phpstorm: {
     title: 'PhpStorm',
     type: 'tools',
   },
-  {
-    key: 'figma',
+  androidstudio: {
+    title: 'Android Studio',
+    type: 'tools',
+  },
+  figma: {
     title: 'Figma',
+    type: 'tools',
+  },
+  beekeeperstudio: {
+    title: 'Beekeeper Studio',
     type: 'tools',
   },
 
   // DevOps
-  {
-    key: 'digitalocean',
+  nginx: {
+    title: 'Nginx',
+    type: 'devops',
+  },
+  digitalocean: {
     title: 'Digital Ocean',
     type: 'devops',
   },
-  {
-    key: 'github',
+  githubactions: {
     title: 'Github Actions',
+    type: 'devops',
+  },
+  redis: {
+    title: 'Redis',
     type: 'devops',
   },
 
   // Others
-  {
-    key: 'inertiajs',
+  inertiajs: {
     title: 'Inertia.js',
+    type: 'others',
   },
-  {
-    key: 'flutter',
+  flutter: {
     title: 'Flutter',
+    type: 'others',
   },
-];
+};
