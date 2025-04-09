@@ -61,6 +61,103 @@ export const links = {
   linkedin: 'https://www.linkedin.com/in/fernandezjasper',
 };
 
+export const projects = {
+  evotepro: {
+    key: 'evotepro',
+    title: 'E-VotePro',
+    description:
+      "An election management system tailored for NEMSU's student elections.",
+    link: '',
+    stack: [
+      'html',
+      'css',
+      'javascript',
+      'php',
+      'laravel',
+      'bootstrap',
+      'mysql',
+    ],
+  },
+  aptiquest: {
+    key: 'aptiquest',
+    title: 'Aptiquest',
+    description:
+      "A management system for student applicants and examiner's exam results for NEMSU Tandag Campus Guidance Office.",
+    link: '',
+    stack: [
+      'html',
+      'css',
+      'javascript',
+      'php',
+      'laravel',
+      'bootstrap',
+      'mysql',
+    ],
+  },
+  inventra: {
+    key: 'inventra',
+    title: 'Inventra',
+    description:
+      'An inventory management system custom built for Jelmaxx Hardware.',
+    link: '',
+    stack: [
+      'html',
+      'css',
+      'javascript',
+      'php',
+      'laravel',
+      'bootstrap',
+      'mysql',
+    ],
+  },
+  bms: {
+    key: 'bms',
+    title: 'BMS',
+    description:
+      'An barangay management system custom built for Barangay Bag-ong Lunsod.',
+    link: 'https://brgybagonglungsod.site/',
+    stack: ['react', 'inertiajs', 'laravel', 'tailwindcss', 'mysql'],
+  },
+  rcs: {
+    key: 'rcs',
+    title: 'RCS',
+    description:
+      'A rabies control system for managing pet records utilizing Random Forest Algorithm for barangay risk level analysis built for Tandag City Vet Office.',
+    link: 'https://rabies-control-system.online',
+    stack: [
+      'react',
+      'inertiajs',
+      'laravel',
+      'tailwindcss',
+      'shadcnui',
+      'mysql',
+    ],
+  },
+  nembus: {
+    key: 'nembus',
+    title: 'NEMBUS',
+    description:
+      'A chatbot for syllabi queries using GPT 3.5 Turbo and LlamaParse of LlamaIndex.',
+    link: 'https://nembus.site',
+    stack: [
+      'react',
+      'inertiajs',
+      'laravel',
+      'tailwindcss',
+      'shadcnui',
+      'mysql',
+    ],
+  },
+  optplus: {
+    key: 'optplus',
+    title: 'OPT-PLUS',
+    description:
+      'A system for managing child health assesments with AI analysis using GPT 3.5 Turbo.',
+    link: 'https://opt-plus.site',
+    stack: ['react', 'inertiajs', 'laravel', 'tailwindcss', 'mysql'],
+  },
+};
+
 export const skills = {
   // Frontend
   html: {

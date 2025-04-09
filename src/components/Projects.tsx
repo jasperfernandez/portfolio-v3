@@ -1,7 +1,10 @@
 import { FolderGit2 } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
-import { skills } from '@/constants/info';
-import SkillBox from './SkillBox';
+import { projects } from '@/constants/info';
+import ProjectSimpleCard from './ProjectSimpleCard';
+import { NavLink } from 'react-router-dom';
+import { APP_PATHS } from '@/constants/app-menus';
+import { Button } from './ui/button';
 
 const Projects = () => {
   return (
@@ -13,22 +16,33 @@ const Projects = () => {
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className='border border-border rounded-md p-4'>
-          <h1 className='font-medium'>E-VotePro</h1>
+        <div className='space-y-4'>
+          <ProjectSimpleCard
+            title={projects.evotepro.title}
+            description={projects.evotepro.description}
+            link={projects.evotepro.link}
+          />
+          <ProjectSimpleCard
+            title={projects.nembus.title}
+            description={projects.nembus.description}
+            link={projects.nembus.link}
+          />
+          <ProjectSimpleCard
+            title={projects.bms.title}
+            description={projects.bms.description}
+            link={projects.bms.link}
+          />
+          <ProjectSimpleCard
+            title={projects.rcs.title}
+            description={projects.rcs.description}
+            link={projects.rcs.link}
+          />
 
-          <p className='text-sm text-muted-foreground'>A voting system.</p>
-          <div>
-            <SkillBox
-              title={skills.laravel.title}
-              logo={
-                <img
-                  src={`/logos/${skills.laravel.key}.svg`}
-                  className='size-4'
-                />
-              }
-              className='w-fit'
-            />
-          </div>
+          <NavLink to={APP_PATHS.projects}>
+            <Button variant={'link'} effect={'underline'}>
+              All Projects
+            </Button>
+          </NavLink>
         </div>
       </CardContent>
     </Card>
