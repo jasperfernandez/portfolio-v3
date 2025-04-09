@@ -92,15 +92,7 @@ export const projects: Record<string, Project> = {
     link: '',
     repoLink: '',
     images: [],
-    stack: [
-      'html',
-      'css',
-      'javascript',
-      'php',
-      'laravel',
-      'bootstrap',
-      'mysql',
-    ],
+    stack: ['laravel', 'bootstrap', 'mysql'],
   },
   bms: {
     key: 'bms',
@@ -124,6 +116,7 @@ export const projects: Record<string, Project> = {
       'react',
       'inertiajs',
       'laravel',
+      'fastapi',
       'tailwindcss',
       'shadcnui',
       'mysql',
@@ -210,6 +203,16 @@ export const skills = {
   laravel: {
     key: 'laravel',
     title: 'Laravel',
+    type: 'backend',
+  },
+  python: {
+    key: 'python',
+    title: 'Python',
+    type: 'backend',
+  },
+  fastapi: {
+    key: 'fastapi',
+    title: 'FastAPI',
     type: 'backend',
   },
 

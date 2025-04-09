@@ -1,6 +1,7 @@
 import {
   Blocks,
   Braces,
+  Cloudy,
   CodeXml,
   Database,
   Server,
@@ -73,6 +74,17 @@ const Skills = () => {
             </TabsTrigger>
             <TabsTrigger
               value='tab-5'
+              className='data-[state=active]:after:bg-primary relative flex-col rounded-none px-4 py-2 text-xs after:absolute after:inset-y-0 sm:after:inset-y-14 after:inset-x-0 after:w-0.5 sm:after:w-auto sm:after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none justify-start w-full sm:w-auto after:top-0 after:bottom-0 sm:after:top-auto sm:after:bottom-0'
+            >
+              <Cloudy
+                className='mb-1.5 opacity-60'
+                size={16}
+                aria-hidden='true'
+              />
+              DevOps
+            </TabsTrigger>
+            <TabsTrigger
+              value='tab-6'
               className='data-[state=active]:after:bg-primary relative flex-col rounded-none px-4 py-2 text-xs after:absolute after:inset-y-0 sm:after:inset-y-14 after:inset-x-0 after:w-0.5 sm:after:w-auto sm:after:h-0.5 data-[state=active]:bg-transparent data-[state=active]:shadow-none justify-start w-full sm:w-auto after:top-0 after:bottom-0 sm:after:top-auto sm:after:bottom-0'
             >
               <Blocks
@@ -167,6 +179,27 @@ const Skills = () => {
           </TabsContent>
 
           <TabsContent value='tab-5'>
+            {/* <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'> */}
+            <div className='flex flex-wrap gap-4 p-4'>
+              {(Object.keys(skills) as (keyof typeof skills)[])
+                .filter((key) => skills[key].type === 'devops')
+                .map((key) => (
+                  <SkillBox
+                    key={key}
+                    title={skills[key].title}
+                    logo={
+                      <img
+                        src={`/logos/${key}.svg`}
+                        alt={skills[key].title}
+                        className='size-4'
+                      />
+                    }
+                  />
+                ))}
+            </div>
+          </TabsContent>
+
+          <TabsContent value='tab-6'>
             {/* <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'> */}
             <div className='flex flex-wrap gap-4 p-4'>
               {(Object.keys(skills) as (keyof typeof skills)[])
