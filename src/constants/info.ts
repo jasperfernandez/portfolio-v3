@@ -64,124 +64,152 @@ export const links = {
 export const skills = {
   // Frontend
   html: {
+    key: 'html',
     title: 'HTML',
     type: 'frontend',
   },
   css: {
+    key: 'css',
     title: 'CSS',
     type: 'frontend',
   },
   javascript: {
+    key: 'javascript',
     title: 'JavaScript',
     type: 'frontend',
   },
   typescript: {
+    key: 'typescript',
     title: 'TypeScript',
     type: 'frontend',
   },
   react: {
+    key: 'react',
     title: 'React',
     type: 'frontend',
   },
   tailwindcss: {
+    key: 'tailwindcss',
     title: 'Tailwind CSS',
     type: 'frontend',
   },
   bootstrap: {
+    key: 'bootstrap',
     title: 'Bootstrap',
     type: 'frontend',
   },
   shadcnui: {
+    key: 'shadcnui',
     title: 'Shadcn UI',
     type: 'frontend',
   },
 
   // Backend
   php: {
+    key: 'php',
     title: 'PHP',
     type: 'backend',
   },
   laravel: {
+    key: 'laravel',
     title: 'Laravel',
     type: 'backend',
   },
 
   // Database
   mysql: {
+    key: 'mysql',
     title: 'MySQL',
     type: 'database',
   },
   sqlite: {
+    key: 'sqlite',
     title: 'SQLite',
     type: 'database',
   },
   postgressql: {
+    key: 'postgressql',
     title: 'PostgresSQL',
     type: 'database',
   },
 
   // Tools
   postman: {
+    key: 'postman',
     title: 'Postman',
     type: 'tools',
   },
   git: {
+    key: 'git',
     title: 'Git',
     type: 'tools',
   },
   github: {
+    key: 'github',
     title: 'Github',
     type: 'tools',
   },
   githubdesktop: {
+    key: 'githubdesktop',
     title: 'Github Desktop',
     type: 'tools',
   },
   vscode: {
+    key: 'vscode',
     title: 'VS Code',
     type: 'tools',
   },
   phpstorm: {
+    key: 'phpstorm',
     title: 'PhpStorm',
     type: 'tools',
   },
   androidstudio: {
+    key: 'androidstudio',
     title: 'Android Studio',
     type: 'tools',
   },
   figma: {
+    key: 'figma',
     title: 'Figma',
     type: 'tools',
   },
   beekeeperstudio: {
+    key: 'beekeeperstudio',
     title: 'Beekeeper Studio',
     type: 'tools',
   },
 
   // DevOps
   nginx: {
+    key: 'nginx',
     title: 'Nginx',
     type: 'devops',
   },
   digitalocean: {
+    key: 'digitalocean',
     title: 'Digital Ocean',
     type: 'devops',
   },
   githubactions: {
+    key: 'githubactions',
     title: 'Github Actions',
     type: 'devops',
   },
   redis: {
+    key: 'redis',
     title: 'Redis',
     type: 'devops',
   },
 
   // Others
   inertiajs: {
+    key: 'inertiajs',
     title: 'Inertia.js',
     type: 'others',
   },
   flutter: {
+    key: 'flutter',
     title: 'Flutter',
     type: 'others',
   },

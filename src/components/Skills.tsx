@@ -85,7 +85,8 @@ const Skills = () => {
           </TabsList>
 
           <TabsContent value='tab-1'>
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'>
+            {/* <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'> */}
+            <div className='flex flex-wrap gap-4 p-4'>
               {Object.keys(skills).map((key) => {
                 const skill = skills[key as keyof typeof skills];
                 return (
@@ -105,7 +106,8 @@ const Skills = () => {
             </div>
           </TabsContent>
           <TabsContent value='tab-2'>
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'>
+            {/* <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'> */}
+            <div className='flex flex-wrap gap-4 p-4'>
               {(Object.keys(skills) as (keyof typeof skills)[])
                 .filter((key) => skills[key].type === 'frontend')
                 .map((key) => (
@@ -124,7 +126,8 @@ const Skills = () => {
             </div>
           </TabsContent>
           <TabsContent value='tab-3'>
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'>
+            {/* <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'> */}
+            <div className='flex flex-wrap gap-4 p-4'>
               {(Object.keys(skills) as (keyof typeof skills)[])
                 .filter((key) => skills[key].type === 'backend')
                 .map((key) => (
@@ -143,7 +146,8 @@ const Skills = () => {
             </div>
           </TabsContent>
           <TabsContent value='tab-4'>
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'>
+            {/* <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'> */}
+            <div className='flex flex-wrap gap-4 p-4'>
               {(Object.keys(skills) as (keyof typeof skills)[])
                 .filter((key) => skills[key].type === 'database')
                 .map((key) => (
@@ -163,7 +167,8 @@ const Skills = () => {
           </TabsContent>
 
           <TabsContent value='tab-5'>
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'>
+            {/* <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'> */}
+            <div className='flex flex-wrap gap-4 p-4'>
               {(Object.keys(skills) as (keyof typeof skills)[])
                 .filter((key) => skills[key].type === 'tools')
                 .map((key) => (

@@ -1,5 +1,7 @@
 import { FolderGit2 } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
+import { skills } from '@/constants/info';
+import SkillBox from './SkillBox';
 
 const Projects = () => {
   return (
@@ -14,15 +16,18 @@ const Projects = () => {
         <div className='border border-border rounded-md p-4'>
           <h1 className='font-medium'>E-VotePro</h1>
 
-          <p className='text-sm text-muted-foreground'>
-            A decentralized voting system built on the Ethereum blockchain,
-            ensuring transparency and security in the voting process.
-          </p>
+          <p className='text-sm text-muted-foreground'>A voting system.</p>
           <div>
-            {/* <SkillBox
-            title='Laravel'
-            logo={skills.laravel}
-             > */}
+            <SkillBox
+              title={skills.laravel.title}
+              logo={
+                <img
+                  src={`/logos/${skills.laravel.key}.svg`}
+                  className='size-4'
+                />
+              }
+              className='w-fit'
+            />
           </div>
         </div>
       </CardContent>
