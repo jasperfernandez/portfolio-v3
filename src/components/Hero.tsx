@@ -35,7 +35,11 @@ const Hero = () => {
             icon={<Linkedin size={16} strokeWidth={2} />}
           />
 
-          <Button size={'sm'} className='flex items-center'>
+          <Button
+            size={'sm'}
+            className='flex items-center'
+            onClick={() => window.open(links.cv, '_blank')}
+          >
             <Download size={16} strokeWidth={2} />
             <span className='font-semibold text-sm'>Download CV</span>
           </Button>
