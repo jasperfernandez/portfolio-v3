@@ -9,7 +9,7 @@ interface SkillBoxProps {
 const SkillBox = ({ title, logo, className = '' }: SkillBoxProps) => {
   return (
     <div
-      className={`border border-border flex gap-1 p-2 rounded-md items-center justify-center bg-white hover:bg-gray-100 dark:bg-primary-foreground dark:hover:bg-background/50 transition-colors ${className}`}
+      className={`border border-border flex gap-1 p-2 rounded-md items-center justify-center bg-white hover:bg-gray-100 dark:bg-primary-foreground dark:hover:bg-background/50 transition-colors duration-300 ${className}`}
     >
       {logo}
       <span className='text-xs font-semibold'>{title}</span>
