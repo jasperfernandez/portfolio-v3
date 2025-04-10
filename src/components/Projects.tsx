@@ -39,7 +39,7 @@ const Projects = () => {
             link={projects.syllabot.link}
           />
 
-          <NavLink to={APP_PATHS.projects}>
+          <NavLink to={APP_PATHS.projects} preventScrollReset>
             <Button variant={'link'} effect={'underline'}>
               All Projects
             </Button>

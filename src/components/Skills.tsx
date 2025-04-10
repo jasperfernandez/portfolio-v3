@@ -11,6 +11,7 @@ import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { skills } from '@/constants/info';
 import SkillBox from './SkillBox';
+import { motion } from 'framer-motion';
 
 const Skills = () => {
   return (
@@ -99,20 +100,31 @@ const Skills = () => {
           <TabsContent value='tab-1'>
             {/* <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4'> */}
             <div className='flex flex-wrap gap-4 p-4'>
-              {Object.keys(skills).map((key) => {
+              {Object.keys(skills).map((key, index) => {
                 const skill = skills[key as keyof typeof skills];
                 return (
-                  <SkillBox
+                  <motion.div
                     key={key}
-                    title={skill.title}
-                    logo={
-                      <img
-                        src={`/logos/${key}.svg`}
-                        alt={skill.title}
-                        className='size-4'
-                      />
-                    }
-                  />
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.6,
+                      delay: index * 0.1,
+                      ease: 'easeOut',
+                    }}
+                    viewport={{ once: true, amount: 0.2 }}
+                  >
+                    <SkillBox
+                      title={skill.title}
+                      logo={
+                        <img
+                          src={`/logos/${key}.svg`}
+                          alt={skill.title}
+                          className='size-4'
+                        />
+                      }
+                    />
+                  </motion.div>
                 );
               })}
             </div>
@@ -122,18 +134,29 @@ const Skills = () => {
             <div className='flex flex-wrap gap-4 p-4'>
               {(Object.keys(skills) as (keyof typeof skills)[])
                 .filter((key) => skills[key].type === 'frontend')
-                .map((key) => (
-                  <SkillBox
+                .map((key, index) => (
+                  <motion.div
                     key={key}
-                    title={skills[key].title}
-                    logo={
-                      <img
-                        src={`/logos/${key}.svg`}
-                        alt={skills[key].title}
-                        className='size-4'
-                      />
-                    }
-                  />
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.6,
+                      delay: index * 0.1,
+                      ease: 'easeOut',
+                    }}
+                    viewport={{ once: true, amount: 0.2 }}
+                  >
+                    <SkillBox
+                      title={skills[key].title}
+                      logo={
+                        <img
+                          src={`/logos/${key}.svg`}
+                          alt={skills[key].title}
+                          className='size-4'
+                        />
+                      }
+                    />
+                  </motion.div>
                 ))}
             </div>
           </TabsContent>
@@ -142,18 +165,29 @@ const Skills = () => {
             <div className='flex flex-wrap gap-4 p-4'>
               {(Object.keys(skills) as (keyof typeof skills)[])
                 .filter((key) => skills[key].type === 'backend')
-                .map((key) => (
-                  <SkillBox
+                .map((key, index) => (
+                  <motion.div
                     key={key}
-                    title={skills[key].title}
-                    logo={
-                      <img
-                        src={`/logos/${key}.svg`}
-                        alt={skills[key].title}
-                        className='size-4'
-                      />
-                    }
-                  />
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.6,
+                      delay: index * 0.1,
+                      ease: 'easeOut',
+                    }}
+                    viewport={{ once: true, amount: 0.2 }}
+                  >
+                    <SkillBox
+                      title={skills[key].title}
+                      logo={
+                        <img
+                          src={`/logos/${key}.svg`}
+                          alt={skills[key].title}
+                          className='size-4'
+                        />
+                      }
+                    />
+                  </motion.div>
                 ))}
             </div>
           </TabsContent>
@@ -162,18 +196,29 @@ const Skills = () => {
             <div className='flex flex-wrap gap-4 p-4'>
               {(Object.keys(skills) as (keyof typeof skills)[])
                 .filter((key) => skills[key].type === 'database')
-                .map((key) => (
-                  <SkillBox
+                .map((key, index) => (
+                  <motion.div
                     key={key}
-                    title={skills[key].title}
-                    logo={
-                      <img
-                        src={`/logos/${key}.svg`}
-                        alt={skills[key].title}
-                        className='size-4'
-                      />
-                    }
-                  />
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.6,
+                      delay: index * 0.1,
+                      ease: 'easeOut',
+                    }}
+                    viewport={{ once: true, amount: 0.2 }}
+                  >
+                    <SkillBox
+                      title={skills[key].title}
+                      logo={
+                        <img
+                          src={`/logos/${key}.svg`}
+                          alt={skills[key].title}
+                          className='size-4'
+                        />
+                      }
+                    />
+                  </motion.div>
                 ))}
             </div>
           </TabsContent>
@@ -183,18 +228,29 @@ const Skills = () => {
             <div className='flex flex-wrap gap-4 p-4'>
               {(Object.keys(skills) as (keyof typeof skills)[])
                 .filter((key) => skills[key].type === 'devops')
-                .map((key) => (
-                  <SkillBox
+                .map((key, index) => (
+                  <motion.div
                     key={key}
-                    title={skills[key].title}
-                    logo={
-                      <img
-                        src={`/logos/${key}.svg`}
-                        alt={skills[key].title}
-                        className='size-4'
-                      />
-                    }
-                  />
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.6,
+                      delay: index * 0.1,
+                      ease: 'easeOut',
+                    }}
+                    viewport={{ once: true, amount: 0.2 }}
+                  >
+                    <SkillBox
+                      title={skills[key].title}
+                      logo={
+                        <img
+                          src={`/logos/${key}.svg`}
+                          alt={skills[key].title}
+                          className='size-4'
+                        />
+                      }
+                    />
+                  </motion.div>
                 ))}
             </div>
           </TabsContent>
@@ -204,18 +260,29 @@ const Skills = () => {
             <div className='flex flex-wrap gap-4 p-4'>
               {(Object.keys(skills) as (keyof typeof skills)[])
                 .filter((key) => skills[key].type === 'tools')
-                .map((key) => (
-                  <SkillBox
+                .map((key, index) => (
+                  <motion.div
                     key={key}
-                    title={skills[key].title}
-                    logo={
-                      <img
-                        src={`/logos/${key}.svg`}
-                        alt={skills[key].title}
-                        className='size-4'
-                      />
-                    }
-                  />
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.6,
+                      delay: index * 0.1,
+                      ease: 'easeOut',
+                    }}
+                    viewport={{ once: true, amount: 0.2 }}
+                  >
+                    <SkillBox
+                      title={skills[key].title}
+                      logo={
+                        <img
+                          src={`/logos/${key}.svg`}
+                          alt={skills[key].title}
+                          className='size-4'
+                        />
+                      }
+                    />
+                  </motion.div>
                 ))}
             </div>
           </TabsContent>

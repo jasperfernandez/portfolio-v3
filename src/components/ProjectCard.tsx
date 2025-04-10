@@ -11,7 +11,9 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
   return (
-    <div className={`border border-border rounded-md p-4 w-full ${className}`}>
+    <div
+      className={`border border-border rounded-md p-4 h-full w-full ${className}`}
+    >
       <h1 className='font-semibold'>{project.title}</h1>
 
       <p className='text-sm text-muted-foreground mb-4'>

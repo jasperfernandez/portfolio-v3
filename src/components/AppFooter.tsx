@@ -1,23 +1,43 @@
 import { links } from '@/constants/info';
 import { Github, Linkedin } from 'lucide-react';
 import IconLink from './IconLink';
+import { motion } from 'framer-motion';
 
 const AppFooter = () => {
   return (
     <div className='max-w-2xl mx-auto px-4 sm:px-0'>
       <div className='flex items-center justify-between h-24'>
-        <span className='text-sm'>© 2025 Jasper Fernandez</span>
+        <motion.span
+          className='text-sm'
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+        >
+          © 2025 Jasper Fernandez
+        </motion.span>
 
         <div className='flex items-center gap-2 justify-center sm:justify-start'>
-          <IconLink
-            href={links.github}
-            icon={<Github size={16} strokeWidth={2} />}
-          />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+          >
+            <IconLink
+              href={links.github}
+              icon={<Github size={16} strokeWidth={2} />}
+            />
+          </motion.div>
 
-          <IconLink
-            href={links.linkedin}
-            icon={<Linkedin size={16} strokeWidth={2} />}
-          />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+          >
+            <IconLink
+              href={links.linkedin}
+              icon={<Linkedin size={16} strokeWidth={2} />}
+            />
+          </motion.div>
         </div>
       </div>
     </div>

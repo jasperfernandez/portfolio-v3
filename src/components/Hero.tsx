@@ -3,49 +3,87 @@ import { MapPin, Github, Linkedin, Download } from 'lucide-react';
 import IconLink from './IconLink';
 import { Button } from './ui/button';
 import jasperPhoto from '@/assets/jasper.png';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className='flex flex-col sm:flex-row gap-6 sm:gap-10 items-center px-4 sm:px-0'>
-      <img
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.2 }}
+      className='flex flex-col sm:flex-row gap-6 sm:gap-10 items-center px-4 sm:px-0'
+    >
+      <motion.img
         src={jasperPhoto}
         alt='Jasper Fernandez'
         className='rounded-full h-36 w-36 border shadow-sm'
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
       />
 
       <div className='flex-1 text-center sm:text-left'>
-        <h1 className='text-xl font-bold mb-1'>
+        <motion.h1
+          className='text-xl font-bold mb-1'
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
+        >
           <span className='text-nowrap'>{personalInfo.name} </span>{' '}
           <span className='text-nowrap'>({personalInfo.role})</span>
-        </h1>
+        </motion.h1>
 
-        <div className='flex items-center gap-1 justify-center sm:justify-start'>
+        <motion.div
+          className='flex items-center gap-1 justify-center sm:justify-start'
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.4, ease: 'easeOut' }}
+        >
           <MapPin size={16} strokeWidth={1.5} />{' '}
           <span className='text-xs'>{personalInfo.address}</span>
-        </div>
+        </motion.div>
 
         <div className='flex items-center gap-2 mt-4 justify-center sm:justify-start'>
-          <IconLink
-            href={links.github}
-            icon={<Github size={16} strokeWidth={2} />}
-          />
-
-          <IconLink
-            href={links.linkedin}
-            icon={<Linkedin size={16} strokeWidth={2} />}
-          />
-
-          <Button
-            size={'sm'}
-            className='flex items-center'
-            onClick={() => window.open(links.cv, '_blank')}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.6, ease: 'easeOut' }}
           >
-            <Download size={16} strokeWidth={2} />
-            <span className='font-semibold text-sm'>Download CV</span>
-          </Button>
+            <IconLink
+              href={links.github}
+              icon={<Github size={16} strokeWidth={2} />}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.8, ease: 'easeOut' }}
+          >
+            <IconLink
+              href={links.linkedin}
+              icon={<Linkedin size={16} strokeWidth={2} />}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 1, ease: 'easeOut' }}
+          >
+            <Button
+              size={'sm'}
+              className='flex items-center'
+              onClick={() => window.open(links.cv, '_blank')}
+            >
+              <Download size={16} strokeWidth={2} />
+              <span className='font-semibold text-sm'>Download CV</span>
+            </Button>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
