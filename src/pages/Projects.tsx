@@ -10,13 +10,14 @@ const Projects = () => {
       <div className='flex items-center justify-center relative'>
         <NavLink
           to={APP_PATHS.home}
-          className='absolute left-0 p-2 hover:bg-accent rounded-md'
+          className='absolute left-2 sm:left-0 p-2 hover:bg-accent rounded-md'
         >
           <ArrowLeft size={16} strokeWidth={1.5} />
         </NavLink>
 
         <h1 className='font-bold text-xl'>All Projects</h1>
       </div>
+
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
         {Object.keys(projects).map((key) => {
           const project = projects[key as keyof typeof projects];
