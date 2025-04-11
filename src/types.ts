@@ -4,6 +4,7 @@ export interface Project {
   description: string;
   link: string;
   repoLink: string;
+  displayImage?: string;
   images: string[];
   stack: string[];
 }

@@ -54,7 +54,7 @@ const Projects = () => {
             }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <ProjectSimpleCard project={projects.pms} />
+            <ProjectSimpleCard project={projects.rcs} />
           </motion.div>
 
           <motion.div
@@ -67,7 +67,7 @@ const Projects = () => {
             }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <ProjectSimpleCard project={projects.syllabot} />
+            <ProjectSimpleCard project={projects.nembus} />
           </motion.div>
 
           <NavLink to={APP_PATHS.projects}>

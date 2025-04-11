@@ -14,6 +14,8 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
     <div
       className={`border border-border bg-card rounded-md p-4 h-full w-full ${className}`}
     >
+      <img src={project.displayImage} className='h-40 w-full rounded mb-4' />
+
       <h1 className='font-semibold'>{project.title}</h1>
 
       <p className='text-sm text-muted-foreground mb-4'>
