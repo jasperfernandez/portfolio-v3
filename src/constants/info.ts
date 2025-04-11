@@ -71,7 +71,7 @@ export const projects: Record<string, Project> = {
     description:
       "An election management system tailored for NEMSU's student elections.",
     link: '',
-    repoLink: '',
+    repoLink: 'https://github.com/jasperfernandez',
     images: [],
     stack: ['laravel', 'bootstrap', 'mysql'],
   },
@@ -81,7 +81,7 @@ export const projects: Record<string, Project> = {
     description:
       "A management system for student applicants and examiner's exam results for NEMSU Tandag Campus Guidance Office.",
     link: '',
-    repoLink: '',
+    repoLink: 'https://github.com/jasperfernandez',
     images: [],
     stack: ['laravel', 'bootstrap', 'mysql'],
   },
@@ -91,7 +91,7 @@ export const projects: Record<string, Project> = {
     description:
       'An inventory management system custom built for Jelmaxx Hardware.',
     link: '',
-    repoLink: '',
+    repoLink: 'https://github.com/jasperfernandez',
     images: [],
     stack: ['laravel', 'bootstrap', 'mysql'],
   },
@@ -101,7 +101,7 @@ export const projects: Record<string, Project> = {
     description:
       'An barangay management system custom built for Barangay Bag-ong Lunsod.',
     link: 'https://brgybagonglungsod.site/',
-    repoLink: '',
+    repoLink: 'https://github.com/jasperfernandez',
     images: [],
     stack: ['react', 'inertiajs', 'laravel', 'tailwindcss', 'mysql'],
   },
@@ -111,7 +111,7 @@ export const projects: Record<string, Project> = {
     description:
       'A pet management system utilizing Random Forest Algorithm for barangay risk level analysis built for Tandag City Vet Office and Barangay Councils.',
     link: 'https://rabies-control-system.online',
-    repoLink: '',
+    repoLink: 'https://github.com/jasperfernandez',
     images: [],
     stack: [
       'react',
@@ -129,7 +129,7 @@ export const projects: Record<string, Project> = {
     description:
       'A chatbot for syllabi queries using GPT 3.5 Turbo and LlamaParse.',
     link: 'https://nembus.site',
-    repoLink: '',
+    repoLink: 'https://github.com/jasperfernandez',
     images: [],
     stack: [
       'react',
@@ -146,7 +146,16 @@ export const projects: Record<string, Project> = {
     description:
       'A system for managing child health assesments with AI analysis using GPT 3.5 Turbo.',
     link: 'https://opt-plus.site',
-    repoLink: '',
+    repoLink: 'https://github.com/jasperfernandez',
+    images: [],
+    stack: ['react', 'inertiajs', 'laravel', 'tailwindcss', 'mysql'],
+  },
+  fes: {
+    key: 'fes',
+    title: 'FES',
+    description: 'A faculty evaluation system for NEMSU.',
+    link: 'https://nemsu-fes.online',
+    repoLink: 'https://github.com/jasperfernandez',
     images: [],
     stack: ['react', 'inertiajs', 'laravel', 'tailwindcss', 'mysql'],
   },

@@ -28,11 +28,7 @@ const Projects = () => {
             }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <ProjectSimpleCard
-              title={projects.evotepro.title}
-              description={projects.evotepro.description}
-              link={projects.evotepro.link}
-            />
+            <ProjectSimpleCard project={projects.evotepro} />
           </motion.div>
 
           <motion.div
@@ -45,11 +41,7 @@ const Projects = () => {
             }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <ProjectSimpleCard
-              title={projects.bms.title}
-              description={projects.bms.description}
-              link={projects.bms.link}
-            />
+            <ProjectSimpleCard project={projects.bms} />
           </motion.div>
 
           <motion.div
@@ -62,11 +54,7 @@ const Projects = () => {
             }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <ProjectSimpleCard
-              title={projects.pms.title}
-              description={projects.pms.description}
-              link={projects.pms.link}
-            />
+            <ProjectSimpleCard project={projects.pms} />
           </motion.div>
 
           <motion.div
@@ -79,11 +67,7 @@ const Projects = () => {
             }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <ProjectSimpleCard
-              title={projects.syllabot.title}
-              description={projects.syllabot.description}
-              link={projects.syllabot.link}
-            />
+            <ProjectSimpleCard project={projects.syllabot} />
           </motion.div>
 
           <NavLink to={APP_PATHS.projects} preventScrollReset>

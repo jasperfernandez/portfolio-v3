@@ -1,32 +1,31 @@
+import { Project } from '@/types';
 import IconLink from './IconLink';
 import { GitBranch, SquareArrowOutUpRight } from 'lucide-react';
 
 interface ProjectSimpleCardProps {
-  title: string;
-  description: string;
-  link: string;
+  project: Project;
   className?: string;
 }
 
 const ProjectSimpleCard = ({
-  title,
-  description,
-  link,
+  project,
   className = '',
 }: ProjectSimpleCardProps) => {
   return (
     <div className={`border border-border rounded-md p-4 w-full ${className}`}>
-      <h1 className='font-semibold'>{title}</h1>
+      <h1 className='font-semibold'>{project.title}</h1>
 
-      <p className='text-sm text-muted-foreground mb-4'>{description}</p>
+      <p className='text-sm text-muted-foreground mb-4'>
+        {project.description}
+      </p>
 
       <div className='flex gap-2 items-center'>
         <IconLink
-          href={link}
+          href={project.repoLink}
           icon={<GitBranch size={16} strokeWidth={1.5} />}
         />
         <IconLink
-          href={link}
+          href={project.link}
           icon={<SquareArrowOutUpRight size={16} strokeWidth={1.5} />}
         />
       </div>
