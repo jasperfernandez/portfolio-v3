@@ -124,6 +124,51 @@
   }
 }
 
+/* keyframes: {
+      shine: {
+        '0%': { backgroundPosition: '200% 0' },
+        '25%': { backgroundPosition: '-200% 0' },
+        '100%': { backgroundPosition: '-200% 0' },
+      },
+    
+    animation: {
+      shine: 'shine 3s ease-out infinite',
+      'gradient-flow': 'gradientFlow 10s ease 0s infinite normal none running',
+    }, */
+
+@theme {
+  @keyframes bounce-down {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(4px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes shine {
+    0% {
+      background-position: 200% 0;
+    }
+    25% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  @keyframes gradient-flow {
+    0% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+}
+
 .scrollbar-thumb {
   background-color: var(--primary) !important;
   width: 6px !important;

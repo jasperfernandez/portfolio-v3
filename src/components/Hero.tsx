@@ -1,9 +1,10 @@
 import { personalInfo, links } from '@/constants/info';
-import { MapPin, Github, Linkedin, Download } from 'lucide-react';
+import { MapPin, Github, Linkedin } from 'lucide-react';
 import IconLink from './IconLink';
 import { Button } from './ui/button';
 import jasperPhoto from '@/assets/jasper.png';
 import { motion } from 'framer-motion';
+import DownloadIcon from './DownloadIcon';
 
 const Hero = () => {
   return (
@@ -81,10 +82,10 @@ const Hero = () => {
           >
             <Button
               size={'sm'}
-              className='flex items-center'
+              className='flex items-center group'
               onClick={() => window.open(links.cv, '_blank')}
             >
-              <Download size={16} strokeWidth={2} />
+              <DownloadIcon />
               <span className='font-semibold text-sm'>Download CV</span>
             </Button>
           </motion.div>
