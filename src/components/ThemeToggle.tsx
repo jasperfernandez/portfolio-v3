@@ -8,7 +8,8 @@ const ThemeToggle = () => {
   return (
     <Toggle
       variant='outline'
-      className='group data-[state=on]:hover:bg-muted rounded-full data-[state=on]:bg-transparent'
+      // className='group data-[state=on]:hover:bg-muted rounded-full data-[state=on]:bg-transparent'
+      className='group rounded-full bg-card dark:hover:bg-background/50 transition-colors duration-300 hover:bg-muted'
       pressed={theme === 'dark'}
       size={'sm'}
       onPressedChange={toggleTheme}
