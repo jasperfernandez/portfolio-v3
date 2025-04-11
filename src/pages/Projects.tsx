@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom';
 
 const Projects = () => {
   useEffect(() => {
+    console.log('Projects page mounted');
     window.scrollTo(0, 0);
   }, []);
 

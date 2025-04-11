@@ -123,3 +123,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+.scrollbar-thumb {
+  background-color: var(--primary) !important;
+  width: 6px !important;
+  border-radius: 0 !important;
+}
+
+.scrollbar-track-y {
+  background-color: transparent !important;
+  width: 6px !important;
+  border-radius: 0 !important;
+}

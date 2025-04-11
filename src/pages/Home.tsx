@@ -4,11 +4,14 @@ import Experience from '@/components/Experience';
 import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
+import SmoothScroll from '@/components/SmoothScroll';
 import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
     <div className='max-w-2xl mx-auto space-y-8'>
+      <SmoothScroll />
+
       <Hero />
 
       <div className='space-y-4'>

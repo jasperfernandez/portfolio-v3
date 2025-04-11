@@ -70,7 +70,7 @@ const Projects = () => {
             <ProjectSimpleCard project={projects.syllabot} />
           </motion.div>
 
-          <NavLink to={APP_PATHS.projects} preventScrollReset>
+          <NavLink to={APP_PATHS.projects}>
             <Button variant={'link'} effect={'underline'}>
               All Projects
             </Button>
