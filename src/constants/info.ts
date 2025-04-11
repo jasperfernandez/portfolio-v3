@@ -333,4 +333,9 @@ export const skills = {
     title: 'Flutter',
     type: 'others',
   },
+  bloc: {
+    key: 'bloc',
+    title: 'Flutter Bloc',
+    type: 'others',
+  },
 };
