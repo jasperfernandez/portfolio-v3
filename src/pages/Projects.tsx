@@ -3,15 +3,9 @@ import { APP_PATHS } from '@/constants/app-menus';
 import { projects } from '@/constants/info';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
-import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Projects = () => {
-  useEffect(() => {
-    console.log('Projects page mounted');
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className='max-w-2xl mx-auto space-y-8'>
       <div className='flex items-center justify-center relative'>
