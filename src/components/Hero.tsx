@@ -17,7 +17,7 @@ const Hero = () => {
       <motion.img
         src={jasperPhoto}
         alt='Jasper Fernandez'
-        className='rounded-full h-36 w-36 border-4 border-transparent shadow-sm'
+        className='rounded-full h-36 w-36 border border-border shadow-sm'
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         whileHover={{ scale: 1.05, rotate: 1 }}
