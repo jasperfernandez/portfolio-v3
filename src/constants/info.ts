@@ -73,7 +73,7 @@ export const projects: Record<string, Project> = {
     link: '',
     repoLink: 'https://github.com/jasperfernandez',
     images: [],
-    stack: ['laravel', 'bootstrap', 'mysql'],
+    stack: ['laravel', 'bootstrap', 'flutter', 'mysql'],
   },
   aptiquest: {
     key: 'aptiquest',
