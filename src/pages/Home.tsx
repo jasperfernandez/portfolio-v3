@@ -22,7 +22,7 @@ const Home = () => {
               delay: i * 0.15,
               ease: 'easeOut',
             }}
-            viewport={{ amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <Comp />
           </motion.div>

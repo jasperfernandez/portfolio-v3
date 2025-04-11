@@ -12,6 +12,7 @@ const AppFooter = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           © 2025 Jasper Fernandez
         </motion.span>
@@ -21,6 +22,7 @@ const AppFooter = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <IconLink
               href={links.github}
@@ -32,6 +34,7 @@ const AppFooter = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <IconLink
               href={links.linkedin}

@@ -17,10 +17,12 @@ const Hero = () => {
       <motion.img
         src={jasperPhoto}
         alt='Jasper Fernandez'
-        className='rounded-full h-36 w-36 border shadow-sm'
+        className='rounded-full h-36 w-36 border-4 border-transparent shadow-sm'
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
+        whileHover={{ scale: 1.05, rotate: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
+        viewport={{ once: true, amount: 0.2 }}
       />
 
       <div className='flex-1 text-center sm:text-left'>
@@ -29,6 +31,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <span className='text-nowrap'>{personalInfo.name} </span>{' '}
           <span className='text-nowrap'>({personalInfo.role})</span>
@@ -39,6 +42,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           <MapPin size={16} strokeWidth={1.5} />{' '}
           <span className='text-xs'>{personalInfo.address}</span>
@@ -49,6 +53,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.6, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <IconLink
               href={links.github}
@@ -60,6 +65,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <IconLink
               href={links.linkedin}
@@ -71,6 +77,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 1, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <Button
               size={'sm'}

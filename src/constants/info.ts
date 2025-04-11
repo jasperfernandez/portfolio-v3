@@ -194,6 +194,16 @@ export const skills = {
     title: 'Shadcn UI',
     type: 'frontend',
   },
+  zod: {
+    key: 'zod',
+    title: 'Zod',
+    type: 'frontend',
+  },
+  framermotion: {
+    key: 'framermotion',
+    title: 'Framer Motion',
+    type: 'frontend',
+  },
 
   // Backend
   php: {

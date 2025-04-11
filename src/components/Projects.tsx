@@ -5,6 +5,7 @@ import ProjectSimpleCard from './ProjectSimpleCard';
 import { NavLink } from 'react-router-dom';
 import { APP_PATHS } from '@/constants/app-menus';
 import { Button } from './ui/button';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
@@ -17,27 +18,73 @@ const Projects = () => {
       </CardHeader>
       <CardContent>
         <div className='space-y-4'>
-          <ProjectSimpleCard
-            title={projects.evotepro.title}
-            description={projects.evotepro.description}
-            link={projects.evotepro.link}
-          />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.6,
+              delay: 0 * 0.1,
+              ease: 'easeOut',
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <ProjectSimpleCard
+              title={projects.evotepro.title}
+              description={projects.evotepro.description}
+              link={projects.evotepro.link}
+            />
+          </motion.div>
 
-          <ProjectSimpleCard
-            title={projects.bms.title}
-            description={projects.bms.description}
-            link={projects.bms.link}
-          />
-          <ProjectSimpleCard
-            title={projects.pms.title}
-            description={projects.pms.description}
-            link={projects.pms.link}
-          />
-          <ProjectSimpleCard
-            title={projects.syllabot.title}
-            description={projects.syllabot.description}
-            link={projects.syllabot.link}
-          />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.6,
+              delay: 1 * 0.1,
+              ease: 'easeOut',
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <ProjectSimpleCard
+              title={projects.bms.title}
+              description={projects.bms.description}
+              link={projects.bms.link}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.6,
+              delay: 2 * 0.1,
+              ease: 'easeOut',
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <ProjectSimpleCard
+              title={projects.pms.title}
+              description={projects.pms.description}
+              link={projects.pms.link}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.6,
+              delay: 3 * 0.1,
+              ease: 'easeOut',
+            }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <ProjectSimpleCard
+              title={projects.syllabot.title}
+              description={projects.syllabot.description}
+              link={projects.syllabot.link}
+            />
+          </motion.div>
 
           <NavLink to={APP_PATHS.projects} preventScrollReset>
             <Button variant={'link'} effect={'underline'}>
