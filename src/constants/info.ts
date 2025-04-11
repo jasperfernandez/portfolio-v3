@@ -16,7 +16,7 @@ export const myExperience = [
     date: 'September 2023 - Present',
     title: 'Freelance Software Developer',
     description:
-      'Initial team meeting and project scope definition. Established key milestones and resource allocation.',
+      'Worked on various projects for clients, including web applications and mobile apps. Gained experience in project management and client communication. Developed skills in problem-solving and debugging.',
   },
   {
     id: 2,
@@ -85,9 +85,9 @@ export const projects: Record<string, Project> = {
     images: [],
     stack: ['laravel', 'bootstrap', 'mysql'],
   },
-  inventra: {
-    key: 'inventra',
-    title: 'Inventra',
+  ims: {
+    key: 'ims',
+    title: 'IMS',
     description:
       'An inventory management system custom built for Jelmaxx Hardware.',
     link: '',
