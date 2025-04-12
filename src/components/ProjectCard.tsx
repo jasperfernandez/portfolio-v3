@@ -14,7 +14,11 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
     <div
       className={`border border-border bg-card rounded-md p-4 h-full w-full ${className}`}
     >
-      <img src={project.displayImage} className='h-40 w-full rounded mb-4' />
+      <img
+        src={project.displayImage}
+        className='h-40 w-full rounded mb-4'
+        loading='lazy'
+      />
 
       <h1 className='font-semibold'>{project.title}</h1>
 
@@ -48,6 +52,7 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
                   src={`/logos/${skill.key}.svg`}
                   alt={skill.title}
                   className='size-4'
+                  loading='lazy'
                 />
               }
               className='mt-2'

@@ -19,6 +19,7 @@ const Hero = () => {
         src={jasperPhoto}
         alt='Jasper Fernandez'
         className='rounded-full h-36 w-36 border border-border shadow-sm'
+        loading='lazy'
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         whileHover={{ scale: 1.05, rotate: 1 }}

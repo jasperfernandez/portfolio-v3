@@ -121,6 +121,7 @@ const Skills = () => {
                           src={`/logos/${key}.svg`}
                           alt={skill.title}
                           className='size-4'
+                          loading='lazy'
                         />
                       }
                     />
@@ -153,6 +154,7 @@ const Skills = () => {
                           src={`/logos/${key}.svg`}
                           alt={skills[key].title}
                           className='size-4'
+                          loading='lazy'
                         />
                       }
                     />
@@ -184,6 +186,7 @@ const Skills = () => {
                           src={`/logos/${key}.svg`}
                           alt={skills[key].title}
                           className='size-4'
+                          loading='lazy'
                         />
                       }
                     />
@@ -215,6 +218,7 @@ const Skills = () => {
                           src={`/logos/${key}.svg`}
                           alt={skills[key].title}
                           className='size-4'
+                          loading='lazy'
                         />
                       }
                     />
@@ -247,6 +251,7 @@ const Skills = () => {
                           src={`/logos/${key}.svg`}
                           alt={skills[key].title}
                           className='size-4'
+                          loading='lazy'
                         />
                       }
                     />
@@ -279,6 +284,7 @@ const Skills = () => {
                           src={`/logos/${key}.svg`}
                           alt={skills[key].title}
                           className='size-4'
+                          loading='lazy'
                         />
                       }
                     />
