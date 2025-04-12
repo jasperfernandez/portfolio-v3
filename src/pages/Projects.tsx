@@ -1,4 +1,11 @@
 import ProjectCard from '@/components/ProjectCard';
+import { Button } from '@/components/ui/button';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 import { APP_PATHS } from '@/constants/app-menus';
 import { projects } from '@/constants/info';
 import { motion } from 'framer-motion';
@@ -8,13 +15,25 @@ import { NavLink } from 'react-router-dom';
 const Projects = () => {
   return (
     <div className='max-w-2xl mx-auto space-y-8'>
-      <div className='flex items-center justify-center relative'>
-        <NavLink
-          to={APP_PATHS.home}
-          className='absolute left-2 sm:left-0 p-2 hover:bg-accent rounded-md'
-        >
-          <ArrowLeft size={16} strokeWidth={1.5} />
-        </NavLink>
+      <div className='flex justify-center items-center relative'>
+        <div className='absolute left-2 sm:left-0'>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button size={'icon'} variant='ghost' asChild>
+                  <NavLink to={APP_PATHS.home}>
+                    <ArrowLeft size={20} strokeWidth={1.5} />
+                  </NavLink>
+                </Button>
+                {/* <div className='p-2 hover:bg-accent rounded-md'>
+                  </div> */}
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Back</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        </div>
 
         <h1 className='font-bold text-xl'>All Projects</h1>
       </div>

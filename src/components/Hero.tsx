@@ -5,6 +5,12 @@ import { Button } from './ui/button';
 import jasperPhoto from '@/assets/jasper.png';
 import { motion } from 'framer-motion';
 import DownloadIcon from './DownloadIcon';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from './ui/tooltip';
 
 const Hero = () => {
   return (
@@ -51,29 +57,47 @@ const Hero = () => {
         </motion.div>
 
         <div className='flex items-center gap-2 mt-4 justify-center sm:justify-start'>
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.6, ease: 'easeOut' }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <IconLink
-              href={links.github}
-              icon={<Github size={16} strokeWidth={2} />}
-            />
-          </motion.div>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <motion.div
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.7, delay: 0.6, ease: 'easeOut' }}
+                  viewport={{ once: true, amount: 0.2 }}
+                >
+                  <IconLink
+                    href={links.github}
+                    icon={<Github size={16} strokeWidth={2} />}
+                  />
+                </motion.div>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Github</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
 
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.8, ease: 'easeOut' }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <IconLink
-              href={links.linkedin}
-              icon={<Linkedin size={16} strokeWidth={2} />}
-            />
-          </motion.div>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <motion.div
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.7, delay: 0.8, ease: 'easeOut' }}
+                  viewport={{ once: true, amount: 0.2 }}
+                >
+                  <IconLink
+                    href={links.linkedin}
+                    icon={<Linkedin size={16} strokeWidth={2} />}
+                  />
+                </motion.div>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>LinkedIn</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}

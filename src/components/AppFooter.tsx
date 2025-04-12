@@ -2,6 +2,12 @@ import { links } from '@/constants/info';
 import { Github, Linkedin } from 'lucide-react';
 import IconLink from './IconLink';
 import { motion } from 'framer-motion';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from './ui/tooltip';
 
 const AppFooter = () => {
   return (
@@ -18,29 +24,51 @@ const AppFooter = () => {
         </motion.span>
 
         <div className='flex items-center gap-2 justify-center sm:justify-start'>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <IconLink
-              href={links.github}
-              icon={<Github size={16} strokeWidth={2} />}
-            />
-          </motion.div>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+                  viewport={{ once: true, amount: 0.2 }}
+                >
+                  <div>
+                    <IconLink
+                      href={links.github}
+                      icon={<Github size={16} strokeWidth={2} />}
+                    />
+                  </div>
+                </motion.div>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Github</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <IconLink
-              href={links.linkedin}
-              icon={<Linkedin size={16} strokeWidth={2} />}
-            />
-          </motion.div>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
+                  viewport={{ once: true, amount: 0.2 }}
+                >
+                  <div>
+                    <IconLink
+                      href={links.linkedin}
+                      icon={<Linkedin size={16} strokeWidth={2} />}
+                    />
+                  </div>
+                </motion.div>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>LinkedIn</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </div>
       </div>
     </div>

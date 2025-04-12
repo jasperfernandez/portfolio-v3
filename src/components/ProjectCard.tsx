@@ -3,6 +3,12 @@ import IconLink from './IconLink';
 import { GitBranch, SquareArrowOutUpRight } from 'lucide-react';
 import SkillBox from './SkillBox';
 import { skills } from '@/constants/info';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from './ui/tooltip';
 
 interface ProjectCardProps {
   project: Project;
@@ -27,14 +33,32 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
       </p>
 
       <div className='flex gap-2 items-center'>
-        <IconLink
-          href={project.repoLink}
-          icon={<GitBranch size={16} strokeWidth={1.5} />}
-        />
-        <IconLink
-          href={project.link}
-          icon={<SquareArrowOutUpRight size={16} strokeWidth={1.5} />}
-        />
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <IconLink
+                href={project.repoLink}
+                icon={<GitBranch size={16} strokeWidth={1.5} />}
+              />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Repository</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <IconLink
+                href={project.link}
+                icon={<SquareArrowOutUpRight size={16} strokeWidth={1.5} />}
+              />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Live view</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </div>
 
       <div className='flex flex-wrap gap-2 mt-2'>

@@ -70,11 +70,9 @@ const Projects = () => {
             <ProjectSimpleCard project={projects.nembus} />
           </motion.div>
 
-          <NavLink to={APP_PATHS.projects}>
-            <Button variant={'link'} effect={'underline'}>
-              All Projects
-            </Button>
-          </NavLink>
+          <Button variant={'link'} effect={'underline'} asChild>
+            <NavLink to={APP_PATHS.projects}>All Projects</NavLink>
+          </Button>
         </div>
       </CardContent>
     </Card>
