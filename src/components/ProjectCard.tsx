@@ -35,11 +35,13 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
       <div className='flex gap-2 items-center'>
         <TooltipProvider>
           <Tooltip>
-            <TooltipTrigger>
-              <IconLink
-                href={project.repoLink}
-                icon={<GitBranch size={16} strokeWidth={1.5} />}
-              />
+            <TooltipTrigger asChild>
+              <div>
+                <IconLink
+                  href={project.repoLink}
+                  icon={<GitBranch size={16} strokeWidth={1.5} />}
+                />
+              </div>
             </TooltipTrigger>
             <TooltipContent>
               <p>Repository</p>
@@ -48,11 +50,13 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
         </TooltipProvider>
         <TooltipProvider>
           <Tooltip>
-            <TooltipTrigger>
-              <IconLink
-                href={project.link}
-                icon={<SquareArrowOutUpRight size={16} strokeWidth={1.5} />}
-              />
+            <TooltipTrigger asChild>
+              <div>
+                <IconLink
+                  href={project.link}
+                  icon={<SquareArrowOutUpRight size={16} strokeWidth={1.5} />}
+                />
+              </div>
             </TooltipTrigger>
             <TooltipContent>
               <p>Live view</p>
