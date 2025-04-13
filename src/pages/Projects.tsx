@@ -19,11 +19,11 @@ const Projects = () => {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <button className='p-2 hover:bg-accent rounded-md border border-transparent outline-none focus:ring-2 focus:ring-ring/50 focus:border-ring'>
-                  <NavLink to={APP_PATHS.home} tabIndex={-1}>
+                <NavLink to={APP_PATHS.home} tabIndex={-1}>
+                  <button className='p-2 hover:bg-accent rounded-md border border-transparent outline-none focus:ring-2 focus:ring-ring/50 focus:border-ring'>
                     <ArrowLeft size={16} strokeWidth={1.5} />
-                  </NavLink>
-                </button>
+                  </button>
+                </NavLink>
               </TooltipTrigger>
               <TooltipContent>
                 <p>Back</p>
