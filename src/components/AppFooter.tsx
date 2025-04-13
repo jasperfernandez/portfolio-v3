@@ -33,12 +33,10 @@ const AppFooter = () => {
                   transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
                   viewport={{ once: true, amount: 0.2 }}
                 >
-                  <div>
-                    <IconLink
-                      href={links.github}
-                      icon={<Github size={16} strokeWidth={2} />}
-                    />
-                  </div>
+                  <IconLink
+                    href={links.github}
+                    icon={<Github size={16} strokeWidth={2} />}
+                  />
                 </motion.div>
               </TooltipTrigger>
               <TooltipContent>
@@ -56,12 +54,10 @@ const AppFooter = () => {
                   transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
                   viewport={{ once: true, amount: 0.2 }}
                 >
-                  <div>
-                    <IconLink
-                      href={links.linkedin}
-                      icon={<Linkedin size={16} strokeWidth={2} />}
-                    />
-                  </div>
+                  <IconLink
+                    href={links.linkedin}
+                    icon={<Linkedin size={16} strokeWidth={2} />}
+                  />
                 </motion.div>
               </TooltipTrigger>
               <TooltipContent>
