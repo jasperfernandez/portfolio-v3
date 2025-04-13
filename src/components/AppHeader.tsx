@@ -13,7 +13,12 @@ const AppHeader = () => {
         viewport={{ once: true, amount: 0.2 }}
         className='flex items-center justify-between h-24'
       >
-        <NavLink to={APP_PATHS.home}>
+        <NavLink
+          to={APP_PATHS.home}
+          className={
+            'px-1.5 border border-transparent rounded-md outline-none focus:ring-2 focus:ring-ring/50 focus:border-ring'
+          }
+        >
           <motion.h1
             className='font-bold text-lg'
             initial={{ opacity: 0 }}
@@ -26,6 +31,7 @@ const AppHeader = () => {
         </NavLink>
 
         <motion.div
+          className='px-2'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}

@@ -36,12 +36,10 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
-              <div>
-                <IconLink
-                  href={project.repoLink}
-                  icon={<GitBranch size={16} strokeWidth={1.5} />}
-                />
-              </div>
+              <IconLink
+                href={project.repoLink}
+                icon={<GitBranch size={16} strokeWidth={1.5} />}
+              />
             </TooltipTrigger>
             <TooltipContent>
               <p>Repository</p>
@@ -51,12 +49,10 @@ const ProjectCard = ({ project, className = '' }: ProjectCardProps) => {
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
-              <div>
-                <IconLink
-                  href={project.link}
-                  icon={<SquareArrowOutUpRight size={16} strokeWidth={1.5} />}
-                />
-              </div>
+              <IconLink
+                href={project.link}
+                icon={<SquareArrowOutUpRight size={16} strokeWidth={1.5} />}
+              />
             </TooltipTrigger>
             <TooltipContent>
               <p>Live view</p>

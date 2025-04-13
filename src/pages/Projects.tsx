@@ -1,5 +1,4 @@
 import ProjectCard from '@/components/ProjectCard';
-import { Button } from '@/components/ui/button';
 import {
   Tooltip,
   TooltipContent,
@@ -20,13 +19,11 @@ const Projects = () => {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button size={'icon'} variant='ghost' asChild>
-                  <NavLink to={APP_PATHS.home}>
-                    <ArrowLeft size={20} strokeWidth={1.5} />
+                <button className='p-2 hover:bg-accent rounded-md border border-transparent outline-none focus:ring-2 focus:ring-ring/50 focus:border-ring'>
+                  <NavLink to={APP_PATHS.home} tabIndex={-1}>
+                    <ArrowLeft size={16} strokeWidth={1.5} />
                   </NavLink>
-                </Button>
-                {/* <div className='p-2 hover:bg-accent rounded-md'>
-                  </div> */}
+                </button>
               </TooltipTrigger>
               <TooltipContent>
                 <p>Back</p>
