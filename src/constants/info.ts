@@ -305,14 +305,19 @@ export const skills = {
     title: 'JavaScript',
     type: 'frontend',
   },
+  react: {
+    key: 'react',
+    title: 'React',
+    type: 'frontend',
+  },
   typescript: {
     key: 'typescript',
     title: 'TypeScript',
     type: 'frontend',
   },
-  react: {
-    key: 'react',
-    title: 'React',
+  vuejs: {
+    key: 'vuejs',
+    title: 'Vue.js',
     type: 'frontend',
   },
   tailwindcss: {
@@ -431,6 +436,16 @@ export const skills = {
   nginx: {
     key: 'nginx',
     title: 'Nginx',
+    type: 'devops',
+  },
+  linux: {
+    key: 'linux',
+    title: 'Linux Basic Commands',
+    type: 'devops',
+  },
+  ubuntu: {
+    key: 'ubuntu',
+    title: 'Ubuntu',
     type: 'devops',
   },
   digitalocean: {
