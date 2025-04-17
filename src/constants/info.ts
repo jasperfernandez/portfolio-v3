@@ -286,6 +286,26 @@ export const projects: Record<string, Project> = {
     ],
     stack: ['laravel', 'bootstrap', 'mysql'],
   },
+  todo: {
+    key: 'todo',
+    title: 'Todo App',
+    description: 'A simple todo app.',
+    link: 'https://todo-jasperfernandez.vercel.app',
+    repoLink: 'https://github.com/jasperfernandez/todo-app',
+    displayImage: '/images/todo/1.png',
+    images: ['/images/todo/1.png'],
+    stack: ['vuejs'],
+  },
+  pomodoro: {
+    key: 'pomodoro',
+    title: 'Pomodoro App',
+    description: 'A simple pomodoro app.',
+    link: 'https://pomodoro-jasperfernandez.vercel.app',
+    repoLink: 'https://github.com/jasperfernandez/pomodoro-app',
+    displayImage: '/images/pomodoro/1.png',
+    images: ['/images/pomodoro/1.png'],
+    stack: ['vuejs'],
+  },
 };
 
 export const skills = {
