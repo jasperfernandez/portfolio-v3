@@ -14,23 +14,23 @@ export const myExperience = [
   {
     id: 1,
     date: 'September 2023 - Present',
-    title: 'Freelance Software Developer',
+    title: 'Full Stack Web Developer Freelancer',
     description:
       'Worked on various projects for clients, including web applications and mobile apps. Gained experience in project management and client communication. Developed skills in problem-solving and debugging.',
   },
   {
     id: 2,
     date: 'October, 2024 - January 2025',
-    title: 'Full Stack Web Developer at DEVPLE',
+    title: 'Full Stack Developer at DEVPLE',
     description:
-      'Worked on a project to develop a web application for a client. Design and implement features. Gained experience in cloud platforms (AWS and Digital Ocean) and deployment processes.',
+      'Developed a comprehensive School Management System to streamline student enrollment, class scheduling, grade tracking, and administrative tasks, enhancing overall efficiency and communication. Gained experience in cloud platforms (AWS and Digital Ocean) and deployment processes.',
   },
   {
     id: 3,
     date: 'July 6, 2023 - April 4, 2023',
     title: 'Intern at NEMSU ICT Unit',
     description:
-      'Worked on a project to develop a web application for the university. Collaborated with a team of senior developers to design and implement features. Gained experience in Agile methodologies and version control using Git.',
+      'Assisted in developing a web application for the university’s IGP Office, collaborating closely with senior developers and gaining hands-on experience.',
   },
   // {
   //   id: 4,
@@ -61,7 +61,7 @@ export const educations = [
 export const links = {
   github: 'https://github.com/jasperfernandez',
   linkedin: 'https://www.linkedin.com/in/fernandezjasper',
-  cv: 'https://drive.google.com/file/d/1Dc8PNKUr7MRiN8jBtwN3lI5xSmrcnbHe/view?usp=sharing',
+  cv: 'https://drive.google.com/file/d/13pyMy7kYpMMnHUGNKdIok7lsEEAon9a-/view?usp=sharing',
 };
 
 export const projects: Record<string, Project> = {
@@ -119,7 +119,7 @@ export const projects: Record<string, Project> = {
     key: 'bms',
     title: 'BMS',
     description:
-      'An barangay management system custom built for Barangay Bag-ong Lunsod.',
+      'An barangay management system custom built for Barangay Bag-ong Lunsod with chatbot powered by OpenAI GPT-3.5 Turbo.',
     link: 'https://brgybagonglungsod.site/',
     repoLink: 'https://github.com/jasperfernandez',
     displayImage: '/images/bms/2.png',
@@ -178,7 +178,7 @@ export const projects: Record<string, Project> = {
     key: 'nembus',
     title: 'NEMBUS',
     description:
-      'A chatbot for syllabi queries using GPT 3.5 Turbo and LlamaParse.',
+      'A syllabus chatbot using OpenAI GPT-3.5 Turbo and LlamaParse for academic support.',
     link: 'https://nembus.site',
     repoLink: 'https://github.com/jasperfernandez',
     displayImage: '/images/nembus/3.png',
@@ -209,7 +209,7 @@ export const projects: Record<string, Project> = {
     key: 'optplus',
     title: 'OPT-PLUS',
     description:
-      'A system for managing child health assesments with AI analysis using GPT 3.5 Turbo.',
+      'A system for managing child health assesments with AI analysis using OpenAI GPT 3.5 Turbo.',
     link: 'https://opt-plus.site',
     repoLink: 'https://github.com/jasperfernandez',
     displayImage: '/images/optplus/2.png',
