@@ -7,7 +7,7 @@ export const personalInfo = {
   contactNo: '+639514534742',
   role: 'Software Developer',
   whoAmI:
-    "Hello there! I'm Jasper, a software developer with almost 2 years of experience in Full Stack Development. I enjoy solving complex problems and creating efficient solutions. I have a strong foundation in both frontend and backend technologies, which allows me to build a maintanable and scalable applications.",
+    "Hello there! I'm Jasper, a web artisan with almost 2 years of experience in Full Stack Development. I enjoy solving complex problems and creating efficient solutions. I have a strong foundation in both frontend and backend technologies, which allows me to build a maintanable and scalable applications.",
 };
 
 export const myExperience = [
