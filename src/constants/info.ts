@@ -138,13 +138,12 @@ export const projects: Record<string, Project> = {
       '/images/bms/12.png',
     ],
     stack: [
-      'react',
+      'vuejs',
       'typescript',
       'inertiajs',
       'laravel',
       'tailwindcss',
       'shadcnui',
-      'zod',
       'mysql',
     ],
   },
@@ -404,6 +403,11 @@ export const skills = {
     title: 'PostgresSQL',
     type: 'database',
   },
+  redis: {
+    key: 'redis',
+    title: 'Redis',
+    type: 'database',
+  },
 
   // Tools
   postman: {
@@ -476,11 +480,6 @@ export const skills = {
   githubactions: {
     key: 'githubactions',
     title: 'Github Actions',
-    type: 'devops',
-  },
-  redis: {
-    key: 'redis',
-    title: 'Redis',
     type: 'devops',
   },
 
