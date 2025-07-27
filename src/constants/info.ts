@@ -376,16 +376,16 @@ export const skills = {
     title: 'Laravel',
     type: 'backend',
   },
-  python: {
-    key: 'python',
-    title: 'Python',
-    type: 'backend',
-  },
-  fastapi: {
-    key: 'fastapi',
-    title: 'FastAPI',
-    type: 'backend',
-  },
+  // python: {
+  //   key: 'python',
+  //   title: 'Python',
+  //   type: 'backend',
+  // },
+  // fastapi: {
+  //   key: 'fastapi',
+  //   title: 'FastAPI',
+  //   type: 'backend',
+  // },
 
   // Database
   mysql: {
