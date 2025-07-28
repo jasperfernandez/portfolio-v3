@@ -61,7 +61,7 @@ export const educations = [
 export const links = {
   github: 'https://github.com/jasperfernandez',
   linkedin: 'https://www.linkedin.com/in/fernandezjasper',
-  cv: 'https://drive.google.com/file/d/1O5t9qOCFVp0YQY8eRDRD1g_BSgbfjZyR/view?usp=sharing',
+  cv: 'https://drive.google.com/drive/folders/1v33wpC4rj8TQPY5QkkXIKjr62Vk_zSsK?usp=sharing',
 };
 
 export const projects: Record<string, Project> = {
