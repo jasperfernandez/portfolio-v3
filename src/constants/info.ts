@@ -13,7 +13,7 @@ export const personalInfo = {
 export const myExperience = [
   {
     id: 1,
-    date: 'August, 2025 - Present',
+    date: 'August 11, 2025 - Present',
     title:
       'Computer Programmer I (Project-Based) | North Eastern Mindanao State University',
     description:
@@ -29,17 +29,17 @@ export const myExperience = [
   {
     id: 3,
     date: 'October, 2024 - January 2025',
-    title: 'Full Stack Web Developer | DEVPLE',
+    title: 'Full Stack Web Developer | Devple',
     description:
       'Developed a comprehensive School Management System to streamline student enrollment, class scheduling, grade tracking, and administrative tasks, enhancing overall efficiency and communication. Gained experience in cloud platforms (AWS and Digital Ocean) and deployment processes.',
   },
-  // {
-  //   id: 4,
-  //   date: 'July 6, 2023 - April 4, 2023',
-  //   title: 'Intern at NEMSU ICT Unit',
-  //   description:
-  //     'Assisted in developing a web application for the university’s IGP Office, collaborating closely with senior developers and gaining hands-on experience.',
-  // },
+  {
+    id: 4,
+    date: 'July 6, 2023 - April 4, 2023',
+    title: 'Intern | NEMSU ICT Unit',
+    description:
+      'Assisted in developing a web application for the university’s IGP Office, collaborating closely with senior developers and gaining hands-on experience.',
+  },
   // {
   //   id: 5,
   //   date: 'June 2020',
