@@ -13,27 +13,35 @@ export const personalInfo = {
 export const myExperience = [
   {
     id: 1,
+    date: 'August, 2025 - Present',
+    title:
+      'Computer Programmer I (Project-Based) | North Eastern Mindanao State University',
+    description:
+      "Contributed to the development of NEMSU's School Information System (SIS) by implementing backend functionalities, optimizing database structures, and maintaining application logic. Additionally, leading the design to create and refine UI/UX prototypes in Figma, translating user requirements into intuitive and user-friendly interfaces.",
+  },
+  {
+    id: 2,
     date: 'September 2023 - Present',
-    title: 'Full Stack Web Developer Freelancer',
+    title: 'Full Stack Web Developer | Freelance',
     description:
       'Worked on various projects for clients, including web applications and mobile apps. Gained experience in project management and client communication. Developed skills in problem-solving and debugging.',
   },
   {
-    id: 2,
+    id: 3,
     date: 'October, 2024 - January 2025',
-    title: 'Full Stack Developer at DEVPLE',
+    title: 'Full Stack Web Developer | DEVPLE',
     description:
       'Developed a comprehensive School Management System to streamline student enrollment, class scheduling, grade tracking, and administrative tasks, enhancing overall efficiency and communication. Gained experience in cloud platforms (AWS and Digital Ocean) and deployment processes.',
   },
-  {
-    id: 3,
-    date: 'July 6, 2023 - April 4, 2023',
-    title: 'Intern at NEMSU ICT Unit',
-    description:
-      'Assisted in developing a web application for the university’s IGP Office, collaborating closely with senior developers and gaining hands-on experience.',
-  },
   // {
   //   id: 4,
+  //   date: 'July 6, 2023 - April 4, 2023',
+  //   title: 'Intern at NEMSU ICT Unit',
+  //   description:
+  //     'Assisted in developing a web application for the university’s IGP Office, collaborating closely with senior developers and gaining hands-on experience.',
+  // },
+  // {
+  //   id: 5,
   //   date: 'June 2020',
   //   title: 'The First Hello World',
   //   description:
