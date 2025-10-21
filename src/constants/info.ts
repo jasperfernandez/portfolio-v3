@@ -14,8 +14,7 @@ export const myExperience = [
   {
     id: 1,
     date: 'August 11, 2025 - Present',
-    title:
-      'Computer Programmer I (Project-Based) | North Eastern Mindanao State University',
+    title: 'Computer Programmer I | North Eastern Mindanao State University',
     description:
       "Contributed to the development of NEMSU's School Information System (SIS) by implementing backend functionalities, optimizing database structures, and maintaining application logic. Additionally, leading the design to create and refine UI/UX prototypes in Figma, translating user requirements into intuitive and user-friendly interfaces.",
   },
